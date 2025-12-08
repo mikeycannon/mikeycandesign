@@ -46,15 +46,6 @@
     })(window, document, 'script', 'dataLayer', 'GTM-W6RBXGX');
     </script>
     <!-- End Google Tag Manager -->
-
-    <script src="https://raw.githubusercontent.com/my-key-can/Betaloop/7198b6f2e2e306dc6b5fac740adfe4357a91cafc/betaloop-widget.js%C2%A0"></script>
-<script>
-  BetaLoop.init({
-    betaToken: "test_user_001",
-    apiUrl: "http://localhost:3000",
-    program: "dark-mode-beta"
-  });
-</script>
 </head>
 
 <body>
@@ -518,6 +509,19 @@
         <script src="/js/smooth-scroll.min.js"></script>
         <script src="/js/jquery.magnific-popup.min.js"></script>
         <script src="/js/custom.js"></script>
+        <!-- BetaLoop Widget -->
+    <script src="https://raw.githubusercontent.com/my-key-can/Betaloop/7198b6f2e2e306dc6b5fac740adfe4357a91cafc/betaloop-widget.js" async></script>
+    <script>
+        window.addEventListener('load', function() {
+            if (typeof window !== 'undefined' && window.BetaLoop) {
+                BetaLoop.init({
+                    betaToken: "test_user_" + Math.random().toString(36).substr(2, 9),
+                    apiUrl: "http://localhost:3000",
+                    program: "dark-mode-beta"
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
