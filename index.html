@@ -515,8 +515,8 @@
     window.addEventListener('load', function() {
         if (window.BetaLoop) {
             BetaLoop.init({
-                betaToken: "test_team_001",  // Fixed value (not random!)
-                apiUrl: "https://run.betaloop.software",  // Your deployed URL
+                betaToken: "test_team_001",  // Must match! Use underscores, NOT spaces
+                apiUrl: "https://betaloop-production.up.railway.app",  // Railway domain with SSL
                 program: "test-feedback"
             });
         }
