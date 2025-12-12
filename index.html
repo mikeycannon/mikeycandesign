@@ -512,15 +512,15 @@
         <!-- BetaLoop Widget -->
         <script src="https://betaloop-production.up.railway.app/betaloop-widget.js" async></script>
 <script>
-    window.addEventListener('load', function() {
-        if (window.BetaLoop) {
-            BetaLoop.init({
-                betaToken: "test_team_001",  // Must match! Use underscores, NOT spaces
-                apiUrl: "https://betaloop-production.up.railway.app",  // Railway domain with SSL
-                program: "test-feedback"
-            });
-        }
-    });
+  window.addEventListener('load', function() {
+    if (window.BetaLoop) {
+      BetaLoop.init({
+        visitor: "account_123",
+        apiUrl: "https://betaloop-production.up.railway.app",
+        program: "feedback"
+      });
+    }
+  });
 </script>
 </body>
 
