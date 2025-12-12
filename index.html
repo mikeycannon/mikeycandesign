@@ -511,17 +511,17 @@
         <script src="/js/custom.js"></script>
         <!-- BetaLoop Widget -->
      <script src="https://cdn.jsdelivr.net/gh/my-key-can/Betaloop/betaloop-widget.js" async></script>
-    <script>
-        window.addEventListener('load', function() {
-            if (window.BetaLoop) {
-                BetaLoop.init({
-                    betaToken: "test_" + Math.random().toString(36).substr(2, 9),
-                    apiUrl: "http://localhost:3000",
-                    program: "test-feedback"
-                });
-            }
-        });
-    </script>
+<script>
+    window.addEventListener('load', function() {
+        if (window.BetaLoop) {
+            BetaLoop.init({
+                betaToken: "test_team_001",  // Fixed value (not random!)
+                apiUrl: "https://run.betaloop.software",  // Your deployed URL
+                program: "test-feedback"
+            });
+        }
+    });
+</script>
 </body>
 
 </html>
