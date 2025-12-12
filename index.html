@@ -515,10 +515,10 @@
   window.addEventListener('load', function() {
     if (window.BetaLoop) {
       BetaLoop.init({
-        visitor: "account_123",
-        apiUrl: "https://betaloop-production.up.railway.app",
-        program: "feedback"
-      });
+  visitor: "user_" + Math.random().toString(36).substr(2, 9),
+  apiUrl: "https://betaloop-production.up.railway.app",
+  program: "betaloop-feedback"  // Add channel name here without # for example this will auto match to #betaloop-feedback
+});
     }
   });
 </script>
