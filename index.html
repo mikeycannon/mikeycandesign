@@ -509,16 +509,20 @@
         <script src="/js/smooth-scroll.min.js"></script>
         <script src="/js/jquery.magnific-popup.min.js"></script>
         <script src="/js/custom.js"></script>
-        <!-- BetaLoop Widget -->
-        <script src="https://betaloop-production.up.railway.app/betaloop-widget.js" async></script>
+        <!-- BetaLoop Widget - Copy and paste this code into your website -->
+
+<!-- 1. Load the BetaLoop widget script -->
+<script src="https://run.betaloop.software/betaloop-widget.js" async></script>
+<!-- 2. Initialize the widget -->
 <script>
   window.addEventListener('load', function() {
     if (window.BetaLoop) {
       BetaLoop.init({
-  visitor: "user_" + Math.random().toString(36).substr(2, 9),
-  apiUrl: "https://betaloop-production.up.railway.app",
-  program: "betaloop-feedback"  // Add channel name here without # for example this will auto match to #betaloop-feedback
-});
+          visitor: "user_123", // Add your own unique visitor ID here.
+          apiUrl: "https://run.betaloop.software",
+          channel: "#betaloop-feedback",  // Directly matches Slack channel name
+          workspace: "BetaLoop"  // Team ID, Workspace code or Workspace name (case-insensitive)
+        });
     }
   });
 </script>
